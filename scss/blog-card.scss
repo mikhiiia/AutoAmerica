@@ -1,0 +1,77 @@
+$blue:#2933AB;
+$white:white;
+$gray:#E6E7EF;
+$text:#000000;
+
+@mixin text ($fs, $fw, $lh, $color){
+    font-family: Montserrat;
+    font-size: $fs;
+    font-weight: $fw;
+    line-height: $lh;
+    color: $color;
+}
+
+@import "./blocks/reset";
+
+@import "./blocks/header";
+@import "./blocks/footer";
+
+header{
+    .container{
+        .header-menu{
+            li:nth-of-type(5){
+                a{
+                    color: $blue;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+
+.container{
+    width: (1440px - 80px) * 100% / 1440px;
+}
+
+.heading{
+    display: flex;
+    justify-content: center;
+    padding: 127px 0 100px;
+
+    h1{
+        @include text (40px, bold, 48.76px, $text);
+    }
+}
+
+.content-news{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
+        img{
+            height: 310px;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        p{
+            @include text (16px, 400, 19.5px, $text);
+
+            a{
+                text-decoration: underline;
+            }
+        }
+
+        .content-news_card_content_date-and-btn_date{
+            padding: 6px 41px;
+            border: 2px solid $gray;
+            @include text (16px, 400, 19.5px, $text);
+            width: fit-content;
+        }
+    }
+}
