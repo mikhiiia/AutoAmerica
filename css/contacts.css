@@ -1,0 +1,508 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 36px 0;
+}
+
+header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .container .header-logo img {
+  width: 155px;
+  height: 25px;
+}
+
+header .container .header-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 40px;
+}
+
+header .container .header-menu li {
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24.38px;
+  color: #000000;
+}
+
+header .container .header-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 13px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .container .header-info input {
+  padding: 8px 18px;
+  background-color: #2933AB;
+  border: none;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.5px;
+  color: white;
+}
+
+header .container .header-info input:hover {
+  border: 2px solid #2933AB;
+  background: none;
+  padding: 7px 17px;
+}
+
+footer {
+  padding: 150px 135px;
+  background-color: #2933AB;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .footer-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 8px;
+}
+
+footer .footer-info img {
+  width: 307px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+footer .footer-info p {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.5px;
+  color: white;
+}
+
+footer .footer-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 25px;
+}
+
+footer .footer-menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .footer-menu ul li {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.5px;
+  color: white;
+}
+
+footer .footer-menu .footer-menu_else-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 25px;
+}
+
+footer .footer-menu .footer-menu_else-info a {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.5px;
+  color: white;
+  text-decoration: underline;
+}
+
+header .container .header-menu li:nth-of-type(4) a {
+  color: #2933AB;
+  font-weight: bold;
+}
+
+.container {
+  width: 94.44444%;
+}
+
+.heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 127px 0 100px;
+}
+
+.heading h1 {
+  font-family: Montserrat;
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 48.76px;
+  color: #000000;
+}
+
+.location {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 140px;
+  width: 100%;
+}
+
+.location .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.location .container .location_map {
+  position: relative;
+  overflow: hidden;
+  width: 555px !important;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.location .container .location_map iframe {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.location .container .location_info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 50px;
+}
+
+.location .container .location_info h3 {
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 24.38px;
+  color: #000000;
+}
+
+.location .container .location_info span {
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.94px;
+  color: #000000;
+}
+
+.location .container .location_info .location_info_office,
+.location .container .location_info .location_info_stock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+
+.location .container .location_info .location_info_office .location_info_office_adresses,
+.location .container .location_info .location_info_office .location_info_stock_adresses,
+.location .container .location_info .location_info_stock .location_info_office_adresses,
+.location .container .location_info .location_info_stock .location_info_stock_adresses {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 12px;
+}
+
+.location .container .location_info .location_info_email,
+.location .container .location_info .location_info_phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.location .container .location_info .location_info_email .location_info_phone_two,
+.location .container .location_info .location_info_phone .location_info_phone_two {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  gap: 12px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.form {
+  padding: 70px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 25px;
+  background-color: #E6E7EF;
+}
+
+.form h3 {
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 29.26px;
+  color: #000000;
+  text-align: center;
+  width: 37.5%;
+}
+
+.form form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 40px;
+  width: 38.88889%;
+}
+
+.form form .form_for-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+
+.form form .form_for-text [class^="form_for-text_"] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 6px;
+  width: 100%;
+}
+
+.form form .form_for-text [class^="form_for-text_"] label {
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.94px;
+  color: #000000;
+}
+
+.form form .form_for-text [class^="form_for-text_"] input, .form form .form_for-text [class^="form_for-text_"] textarea {
+  padding: 15px 30px;
+  border: 2px solid #2933AB;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.5px;
+  color: #000000;
+  background-color: #E6E7EF;
+}
+
+.form form .form_for-text [class^="form_for-text_"] input::-webkit-input-placeholder, .form form .form_for-text [class^="form_for-text_"] textarea::-webkit-input-placeholder {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.5px;
+  color: rgba(141, 141, 141, 0.48);
+}
+
+.form form .form_for-text [class^="form_for-text_"] input:-ms-input-placeholder, .form form .form_for-text [class^="form_for-text_"] textarea:-ms-input-placeholder {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.5px;
+  color: rgba(141, 141, 141, 0.48);
+}
+
+.form form .form_for-text [class^="form_for-text_"] input::-ms-input-placeholder, .form form .form_for-text [class^="form_for-text_"] textarea::-ms-input-placeholder {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.5px;
+  color: rgba(141, 141, 141, 0.48);
+}
+
+.form form .form_for-text [class^="form_for-text_"] input::placeholder, .form form .form_for-text [class^="form_for-text_"] textarea::placeholder {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.5px;
+  color: rgba(141, 141, 141, 0.48);
+}
+
+.form form .form_for-submit {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 25px;
+}
+
+.form form .form_for-submit input[type="submit"],
+.form form .form_for-submit input[type="button"] {
+  padding: 15px;
+  width: 100%;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24.38px;
+  color: #000000;
+}
+
+.form form .form_for-submit input[type="submit"] {
+  border: 2px solid #2933AB;
+  background-color: #E6E7EF;
+}
+
+.form form .form_for-submit input[type="submit"]:hover {
+  background-color: #2933AB;
+  color: white;
+}
+
+.form form .form_for-submit input[type="button"] {
+  border: 2px solid #2933AB;
+  background-color: #2933AB;
+  color: white;
+}
+
+.form form .form_for-submit input[type="button"]:hover {
+  background-color: #E6E7EF;
+  color: #000000;
+}
+/*# sourceMappingURL=contacts.css.map */

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/faq.css">
+    <title>F.A.Q</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-logo">
+                <a href="./index.html"><img src="./img/AUTOAMERICA-black.svg" alt="logo"></a>
+            </div>
+            <ul class="header-menu">
+                <li><a href="./catalog.html">Каталог</a></li>
+                <li><a href="./about-company.html">О компании</a></li>
+                <li><a href="./services.html">Услуги</a></li>
+                <li><a href="./contacts.html">Контакты</a></li>
+                <li><a href="./blog.html">Блог</a></li>
+                <li><a href="./faq.html">F.A.Q</a></li>
+            </ul>
+            <div class="header-info">
+                <input type="button" value="Оставить заявку">
+                <img src="./img/icons/Heart-black.svg" alt="favourite">
+                <img src="./img/icons/Person-black.svg" alt="account">
+            </div>
+        </div>
+    </header>
+
+    <div class="heading">
+        <h1>F.A.Q</h1>
+    </div>
+
+    <section class="questions">
+        <div class="container">
+            <div class="questions_card">
+                <div class="questions_card_question">
+                    <p>Какие машины можно приобрести в интернет-магазине?</p>
+                    <img src="./img/icons/arrow-white.svg" alt="arrow" class="toggle-answer">
+                </div>
+                <div class="questions_card_answer">
+                    <p>В интернет-магазине можно приобрести различные машины из Америки, такие как автомобили, внедорожники, грузовики и другие виды транспортных средств.</p>
+                </div>
+            </div>
+            <div class="questions_card">
+                <div class="questions_card_question">
+                    <p>Каковы условия доставки машин из Америки в Россию?</p>
+                    <img src="./img/icons/arrow-white.svg" alt="arrow">
+                </div>
+                <!-- <div class="questions_card_answer">
+                    <p></p>
+                </div> -->
+            </div>
+            <div class="questions_card">
+                <div class="questions_card_question">
+                    <p>Какие документы необходимы для оформления покупки машины из Америки?</p>
+                    <img src="./img/icons/arrow-white.svg" alt="arrow">
+                </div>
+                <!-- <div class="questions_card_answer">
+                    <p></p>
+                </div> -->
+            </div>
+            <div class="questions_card">
+                <div class="questions_card_question">
+                    <p>Какие штаты Америки представлены в ассортименте магазина?</p>
+                    <img src="./img/icons/arrow-white.svg" alt="arrow">
+                </div>
+                <!-- <div class="questions_card_answer">
+                    <p></p>
+                </div> -->
+            </div>
+            <div class="questions_card">
+                <div class="questions_card_question">
+                    <p>Какие виды машин представлены в ассортименте магазина?</p>
+                    <img src="./img/icons/arrow-white.svg" alt="arrow">
+                </div>
+                <!-- <div class="questions_card_answer">
+                    <p></p>
+                </div> -->
+            </div>
+            <div class="questions_card">
+                <div class="questions_card_question">
+                    <p>Какие типы виз подходят для поездки в Америку для покупки машины?</p>
+                    <img src="./img/icons/arrow-white.svg" alt="arrow">
+                </div>
+                <!-- <div class="questions_card_answer">
+                    <p></p>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-info">
+            <img src="./img/AUTOAMERICA-white.svg" alt="logo">
+            <p>© 2024, ООО «Автоамерика»</p>
+        </div>
+        <div class="footer-menu">
+            <ul>
+                <li><a href="./catalog.html">Каталог</a></li>
+                <li><a href="./about-company.html">О компании</a></li>
+                <li><a href="./services.html">Услуги</a></li>
+                <li><a href="./contacts.html">Контакты</a></li>
+                <li><a href="./blog.html">Блог</a></li>
+                <li><a href="./faq.html">F.A.Q</a></li>
+            </ul>
+            <div class="footer-menu_else-info">
+                <a href="#">Пользовательское соглашение</a>
+                <a href="#">Персональные данные</a>
+                <a href="#">Использование cookie</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const toggleButtons = document.querySelectorAll('.toggle-answer');
+
+            toggleButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const answer = this.closest('.questions_card').querySelector('.questions_card_answer');
+                    if (answer.style.display === 'none' || answer.style.display === '') {
+                        answer.style.display = 'block';
+                    } else {
+                        answer.style.display = 'none';
+                    }
+                    this.classList.toggle('rotate');
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>

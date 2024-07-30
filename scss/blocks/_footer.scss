@@ -1,0 +1,47 @@
+footer{
+    padding: 150px 135px;
+    background-color: $blue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .footer-info{
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+
+        img{
+            width: 307px;
+            height: fit-content;
+        }
+
+        p{
+            @include text (16px, 400, 19.5px, $white);
+        }
+    }
+
+    .footer-menu{
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+
+        ul{
+            display: flex;
+            justify-content: space-between;
+
+            li{
+                @include text (16px, 400, 19.5px, $white);
+            }
+        }
+
+        .footer-menu_else-info{
+            display: flex;
+            gap: 25px;
+
+            a{
+                @include text (16px, 400, 19.5px, $white);
+                text-decoration: underline;
+            }
+        }
+    }
+}

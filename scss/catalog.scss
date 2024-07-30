@@ -1,0 +1,252 @@
+$blue:#2933AB;
+$white:white;
+$gray:#E6E7EF;
+$text:#000000;
+
+@mixin text ($fs, $fw, $lh, $color){
+    font-family: Montserrat;
+    font-size: $fs;
+    font-weight: $fw;
+    line-height: $lh;
+    color: $color;
+}
+
+@import "./blocks/reset";
+
+@import "./blocks/header";
+@import "./blocks/footer";
+
+header{
+    .container{
+        .header-menu{
+            li:nth-of-type(1){
+                a{
+                    color: $blue;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+
+.container{
+    width: (1440px - 80px) * 100% / 1440px;
+}
+
+.heading{
+    display: flex;
+    justify-content: center;
+    padding: 127px 0 100px;
+
+    h1{
+        @include text (40px, bold, 48.76px, $text);
+    }
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 240px;
+
+    .container{
+        display: flex;
+        gap: 20px;
+
+        .content_filter{
+            padding: 50px 20px;
+            border: 2px solid $gray;
+            height: fit-content;
+
+            display: flex;
+            flex-direction: column;
+            gap: 45px;
+
+            .content_filter_heading h2{
+                @include text (20px, bold, 24.38px, $text);
+            }
+
+            .content_filter_filters{
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+
+                [class^="content_filter_filters_"]{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+
+                    span{
+                        @include text (18px, 400, 21.94px, $text);
+                    }
+
+                    select{
+                        height: 45px;
+                        width: 100%;
+                        background-color: $gray;
+                        padding: 10px 20px;
+
+                        @include text (16px, 400, 19.5px, $text);
+                    }
+
+                    [class$="_info"] {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+
+                        [class*="_info_"]{
+                            display: flex;
+                            flex-direction: row;
+                            gap: 7px;
+
+                            span, label{
+                                @include text (16px, 400, 19.5px, $text);
+                            }
+
+                            input[type="text"]{
+                                max-width: 110px;
+                                border: 2px solid $gray;
+
+                                &::placeholder{
+                                    color: #9F9F9F;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            input[type="button"]{ 
+                background-color: $blue;
+                border: none;    
+                padding: 15px 35px;
+                width: 100%;
+                height: 50px;
+                
+                @include text (20px, 400, 24.38px, $white);
+
+                &:hover{
+                    padding: 11px 31px;
+                    border: 2px solid $blue;
+                    background: none;
+                }
+            }
+        }
+
+        .content_cars{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 65px;
+            width: 100%;
+
+            .content_cars_cards{
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                row-gap: 30px;
+    
+                .content_cars_cards_card{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 13px;
+                    width: 325px;
+        
+                    .content_cars_cards_card_img{
+                        background-image: url("../img/cars/volkswagen-tiguan.png");
+                        background-size: cover;
+                        background-position: center;
+                        background-repeat: no-repeat;
+
+                        display: flex;
+                        flex-direction: column-reverse;
+                        align-items: center;
+        
+                        width: 100%;
+                        height: 345px;
+
+                        .content_cars_cards_card_img_slides{
+                            display: flex;
+                            gap: 10px;
+                            margin-bottom: 15px;
+
+                            [class^="content_cars_cards_card_img_slides-"]{
+                                width: 12px;
+                                height: 12px;
+
+                                border: 1px solid $blue;
+                                border-radius: 10px;
+
+                                &:hover{
+                                    border: none;
+                                    background-color: $blue;
+                                    width: 13px;
+                                    height: 13px;
+                                }
+                            }
+                        }
+                    }
+        
+                    .content_cars_cards_card_name{
+                        display: flex;
+                        gap: 10px;
+                        align-items: center;
+        
+                        h4{
+                            @include text (16px, bold, 19.5px, $text);
+                        }
+                    }
+        
+                    .content_cars_cards_card_discription p{
+                        @include text (14px, 400, 14.63px, $text);
+                    }
+        
+                    .content_cars_cards_card_info{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        width: 100%;
+        
+                        span{
+                            @include text (18px, bold, 21.94px, $text);
+                        }
+        
+                        input{
+                            padding: 8px 37px;
+                            background-color: $blue;
+                            border: none;  
+                            width: fit-content;
+                            
+                            @include text (16px, bold, 19.5px, $white);
+                
+                            &:hover{
+                                padding: 6px 35px;
+                                border: 2px solid $blue;
+                                background: none;  
+                                color: $text;
+                            }
+                        }
+                    }
+                }    
+            }
+
+            input[type="button"]{ 
+                border: 2px solid $blue;
+                background: none;  
+                padding: 13px 90px;
+                width: 325px;
+                height: 50px;
+                
+                @include text (20px, 400, 24.38px, $text);
+
+                &:hover{
+                    padding: 17px 94px;
+                    background-color: $blue;
+                    border: none;   
+                    color: $white;
+                }
+            }
+        }    
+    }
+}

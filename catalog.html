@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/catalog.css">
+    <title>Catalog</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-logo">
+                <a href="./index.html"><img src="./img/AUTOAMERICA-black.svg" alt="logo"></a>
+            </div>
+            <ul class="header-menu">
+                <li><a href="./catalog.html">Каталог</a></li>
+                <li><a href="./about-company.html">О компании</a></li>
+                <li><a href="./services.html">Услуги</a></li>
+                <li><a href="./contacts.html">Контакты</a></li>
+                <li><a href="./blog.html">Блог</a></li>
+                <li><a href="./faq.html">F.A.Q</a></li>
+            </ul>
+            <div class="header-info">
+                <input type="button" value="Оставить заявку">
+                <img src="./img/icons/Heart-black.svg" alt="favourite">
+                <img src="./img/icons/Person-black.svg" alt="account">
+            </div>
+        </div>
+    </header>
+
+    <div class="heading">
+        <h1>Каталог</h1>
+    </div>
+
+    <section class="content">
+        <div class="container">
+            <div class="content_filter">
+                <div class="content_filter_heading">
+                    <h2>Поиск по параметрам</h2>
+                </div>
+                <div class="content_filter_filters">
+                    <div class="content_filter_filters_marks">
+                        <span>Марка</span>
+                        <select name="marks" id="marks">
+                            <option value="">Не выбрано</option>
+                            <!-- <option value="">BMW</option>
+                            <option value="">Honda</option>
+                            <option value="">Mersedes</option>
+                            <option value="">Opel</option> -->
+                        </select>
+                    </div>
+                    <div class="content_filter_filters_models">
+                        <span>Модель</span>
+                        <select name="models" id="models">
+                            <option value="">Не выбрано</option>
+                        </select>
+                    </div>
+                    <div class="content_filter_filters_year">
+                        <span>Год выпуска</span>
+                        <select name="year" id="year">
+                            <option value="">Не выбрано</option>
+                        </select>
+                    </div>
+                    <div class="content_filter_filters_price">
+                        <span>Цена</span>
+                        <div class="content_filter_filters_price_info">
+                            <div class="content_filter_filters_price_info_from">
+                                <span>от</span>
+                                <input type="text" placeholder="₽">
+                            </div>
+                            <div class="content_filter_filters_price_info_to">
+                                <span>до</span>
+                                <input type="text" placeholder="₽">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content_filter_filters_mileage">
+                        <span>Пробег</span>
+                        <div class="content_filter_filters_mileage_info">
+                            <div class="content_filter_filters_mileage_info_from">
+                                <span>от</span>
+                                <input type="text" placeholder="тыс. км">
+                            </div>
+                            <div class="content_filter_filters_mileage_info_to">
+                                <span>до</span>
+                                <input type="text" placeholder="тыс. км">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content_filter_filters_condition">
+                        <span>Состояние</span>
+                        <div class="content_filter_filters_condition_info">
+                            <div class="content_filter_filters_condition_info_new">
+                                <input name="new" type="radio">
+                                <label for="new">Новый</label>
+                            </div>
+                            <div class="content_filter_filters_condition_info_supported">
+                                <input name="supported" type="radio">
+                                <label for="supported">Поддержанный</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <input type="button" value="Применить фильтры">
+            </div>
+            <div class="content_cars">
+                <div class="content_cars_cards">
+                    <div class="content_cars_cards_card">
+                        <div class="content_cars_cards_card_img">
+                            <div class="content_cars_cards_card_img_slides">
+                                <div class="content_cars_cards_card_img_slides-1"></div>
+                                <div class="content_cars_cards_card_img_slides-2"></div>
+                                <div class="content_cars_cards_card_img_slides-3"></div>
+                            </div>
+                        </div>
+                        <div class="content_cars_cards_card_name">
+                            <h4>Volkswagen Tiguan Allspace 2.0 AT, 2019 г</h4>
+                            <img src="./img/icons/Heart-blue.svg" alt="favourite">
+                        </div>
+                        <div class="content_cars_cards_card_discription">
+                            <p>Внедорожник 5 дв., подключаемый полный привод, белый. Автомобиль полностью обслужен и не требует вложений. </p>
+                        </div>
+                        <div class="content_cars_cards_card_info">
+                            <span>350 000 ₽</span>
+                            <input type="button" value="Подробнее">
+                        </div>
+                    </div>    
+                    <div class="content_cars_cards_card">
+                        <div class="content_cars_cards_card_img">
+                            <div class="content_cars_cards_card_img_slides">
+                                <div class="content_cars_cards_card_img_slides-1"></div>
+                                <div class="content_cars_cards_card_img_slides-2"></div>
+                                <div class="content_cars_cards_card_img_slides-3"></div>
+                            </div>
+                        </div>
+                        <div class="content_cars_cards_card_name">
+                            <h4>Volkswagen Tiguan Allspace 2.0 AT, 2019 г</h4>
+                            <img src="./img/icons/Heart-blue.svg" alt="favourite">
+                        </div>
+                        <div class="content_cars_cards_card_discription">
+                            <p>Внедорожник 5 дв., подключаемый полный привод, белый. Автомобиль полностью обслужен и не требует вложений. </p>
+                        </div>
+                        <div class="content_cars_cards_card_info">
+                            <span>350 000 ₽</span>
+                            <input type="button" value="Подробнее">
+                        </div>
+                    </div>    
+                    <div class="content_cars_cards_card">
+                        <div class="content_cars_cards_card_img">
+                            <div class="content_cars_cards_card_img_slides">
+                                <div class="content_cars_cards_card_img_slides-1"></div>
+                                <div class="content_cars_cards_card_img_slides-2"></div>
+                                <div class="content_cars_cards_card_img_slides-3"></div>
+                            </div>
+                        </div>
+                        <div class="content_cars_cards_card_name">
+                            <h4>Volkswagen Tiguan Allspace 2.0 AT, 2019 г</h4>
+                            <img src="./img/icons/Heart-blue.svg" alt="favourite">
+                        </div>
+                        <div class="content_cars_cards_card_discription">
+                            <p>Внедорожник 5 дв., подключаемый полный привод, белый. Автомобиль полностью обслужен и не требует вложений. </p>
+                        </div>
+                        <div class="content_cars_cards_card_info">
+                            <span>350 000 ₽</span>
+                            <input type="button" value="Подробнее">
+                        </div>
+                    </div>    
+                    <div class="content_cars_cards_card">
+                        <div class="content_cars_cards_card_img">
+                            <div class="content_cars_cards_card_img_slides">
+                                <div class="content_cars_cards_card_img_slides-1"></div>
+                                <div class="content_cars_cards_card_img_slides-2"></div>
+                                <div class="content_cars_cards_card_img_slides-3"></div>
+                            </div>
+                        </div>
+                        <div class="content_cars_cards_card_name">
+                            <h4>Volkswagen Tiguan Allspace 2.0 AT, 2019 г</h4>
+                            <img src="./img/icons/Heart-blue.svg" alt="favourite">
+                        </div>
+                        <div class="content_cars_cards_card_discription">
+                            <p>Внедорожник 5 дв., подключаемый полный привод, белый. Автомобиль полностью обслужен и не требует вложений. </p>
+                        </div>
+                        <div class="content_cars_cards_card_info">
+                            <span>350 000 ₽</span>
+                            <input type="button" value="Подробнее">
+                        </div>
+                    </div>    
+                    <div class="content_cars_cards_card">
+                        <div class="content_cars_cards_card_img">
+                            <div class="content_cars_cards_card_img_slides">
+                                <div class="content_cars_cards_card_img_slides-1"></div>
+                                <div class="content_cars_cards_card_img_slides-2"></div>
+                                <div class="content_cars_cards_card_img_slides-3"></div>
+                            </div>
+                        </div>
+                        <div class="content_cars_cards_card_name">
+                            <h4>Volkswagen Tiguan Allspace 2.0 AT, 2019 г</h4>
+                            <img src="./img/icons/Heart-blue.svg" alt="favourite">
+                        </div>
+                        <div class="content_cars_cards_card_discription">
+                            <p>Внедорожник 5 дв., подключаемый полный привод, белый. Автомобиль полностью обслужен и не требует вложений. </p>
+                        </div>
+                        <div class="content_cars_cards_card_info">
+                            <span>350 000 ₽</span>
+                            <input type="button" value="Подробнее">
+                        </div>
+                    </div>    
+                    <div class="content_cars_cards_card">
+                        <div class="content_cars_cards_card_img">
+                            <div class="content_cars_cards_card_img_slides">
+                                <div class="content_cars_cards_card_img_slides-1"></div>
+                                <div class="content_cars_cards_card_img_slides-2"></div>
+                                <div class="content_cars_cards_card_img_slides-3"></div>
+                            </div>
+                        </div>
+                        <div class="content_cars_cards_card_name">
+                            <h4>Volkswagen Tiguan Allspace 2.0 AT, 2019 г</h4>
+                            <img src="./img/icons/Heart-blue.svg" alt="favourite">
+                        </div>
+                        <div class="content_cars_cards_card_discription">
+                            <p>Внедорожник 5 дв., подключаемый полный привод, белый. Автомобиль полностью обслужен и не требует вложений. </p>
+                        </div>
+                        <div class="content_cars_cards_card_info">
+                            <span>350 000 ₽</span>
+                            <input type="button" value="Подробнее">
+                        </div>
+                    </div> 
+                    <div class="content_cars_cards_card">
+                        <div class="content_cars_cards_card_img">
+                            <div class="content_cars_cards_card_img_slides">
+                                <div class="content_cars_cards_card_img_slides-1"></div>
+                                <div class="content_cars_cards_card_img_slides-2"></div>
+                                <div class="content_cars_cards_card_img_slides-3"></div>
+                            </div>
+                        </div>
+                        <div class="content_cars_cards_card_name">
+                            <h4>Volkswagen Tiguan Allspace 2.0 AT, 2019 г</h4>
+                            <img src="./img/icons/Heart-blue.svg" alt="favourite">
+                        </div>
+                        <div class="content_cars_cards_card_discription">
+                            <p>Внедорожник 5 дв., подключаемый полный привод, белый. Автомобиль полностью обслужен и не требует вложений. </p>
+                        </div>
+                        <div class="content_cars_cards_card_info">
+                            <span>350 000 ₽</span>
+                            <input type="button" value="Подробнее">
+                        </div>
+                    </div>    
+                    <div class="content_cars_cards_card">
+                        <div class="content_cars_cards_card_img">
+                            <div class="content_cars_cards_card_img_slides">
+                                <div class="content_cars_cards_card_img_slides-1"></div>
+                                <div class="content_cars_cards_card_img_slides-2"></div>
+                                <div class="content_cars_cards_card_img_slides-3"></div>
+                            </div>
+                        </div>
+                        <div class="content_cars_cards_card_name">
+                            <h4>Volkswagen Tiguan Allspace 2.0 AT, 2019 г</h4>
+                            <img src="./img/icons/Heart-blue.svg" alt="favourite">
+                        </div>
+                        <div class="content_cars_cards_card_discription">
+                            <p>Внедорожник 5 дв., подключаемый полный привод, белый. Автомобиль полностью обслужен и не требует вложений. </p>
+                        </div>
+                        <div class="content_cars_cards_card_info">
+                            <span>350 000 ₽</span>
+                            <input type="button" value="Подробнее">
+                        </div>
+                    </div>    
+                    <div class="content_cars_cards_card">
+                        <div class="content_cars_cards_card_img">
+                            <div class="content_cars_cards_card_img_slides">
+                                <div class="content_cars_cards_card_img_slides-1"></div>
+                                <div class="content_cars_cards_card_img_slides-2"></div>
+                                <div class="content_cars_cards_card_img_slides-3"></div>
+                            </div>
+                        </div>
+                        <div class="content_cars_cards_card_name">
+                            <h4>Volkswagen Tiguan Allspace 2.0 AT, 2019 г</h4>
+                            <img src="./img/icons/Heart-blue.svg" alt="favourite">
+                        </div>
+                        <div class="content_cars_cards_card_discription">
+                            <p>Внедорожник 5 дв., подключаемый полный привод, белый. Автомобиль полностью обслужен и не требует вложений. </p>
+                        </div>
+                        <div class="content_cars_cards_card_info">
+                            <span>350 000 ₽</span>
+                            <input type="button" value="Подробнее">
+                        </div>
+                    </div>       
+                </div>
+                <input type="button" value="Показать еще">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-info">
+            <img src="./img/AUTOAMERICA-white.svg" alt="logo">
+            <p>© 2024, ООО «Автоамерика»</p>
+        </div>
+        <div class="footer-menu">
+            <ul>
+                <li><a href="./catalog.html">Каталог</a></li>
+                <li><a href="./about-company.html">О компании</a></li>
+                <li><a href="./services.html">Услуги</a></li>
+                <li><a href="./contacts.html">Контакты</a></li>
+                <li><a href="./blog.html">Блог</a></li>
+                <li><a href="./faq.html">F.A.Q</a></li>
+            </ul>
+            <div class="footer-menu_else-info">
+                <a href="#">Пользовательское соглашение</a>
+                <a href="#">Персональные данные</a>
+                <a href="#">Использование cookie</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

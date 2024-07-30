@@ -1,0 +1,101 @@
+$blue:#2933AB;
+$white:white;
+$gray:#E6E7EF;
+$text:#000000;
+
+@mixin text ($fs, $fw, $lh, $color){
+    font-family: Montserrat;
+    font-size: $fs;
+    font-weight: $fw;
+    line-height: $lh;
+    color: $color;
+}
+
+@import "./blocks/reset";
+
+@import "./blocks/header";
+@import "./blocks/footer";
+
+header{
+    .container{
+        .header-menu{
+            li:nth-of-type(6){
+                a{
+                    color: $blue;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+
+.container{
+    width: (1440px - 80px) * 100% / 1440px;
+}
+
+.heading{
+    display: flex;
+    justify-content: center;
+    padding: 127px 0 100px;
+
+    h1{
+        @include text (40px, bold, 48.76px, $text);
+    }
+}
+
+.questions{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 200px;
+
+    .container{
+        display: flex;
+        row-gap: 40px;
+        column-gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .questions_card{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 670px;
+
+            .questions_card_question{
+                padding: 20px;
+                background-color: $blue;
+                min-width: fit-content;
+
+                display: flex;
+                gap: 10px;
+                align-items: center;
+
+                p{
+                    @include text (20px, bold, 24.38px, $white);
+                    width: 585px;
+                }
+
+                .rotate {
+                    transform: rotate(180deg);
+                    transition: transform 0.5s ease;
+                }
+
+                img {
+                    transition: transform 0.5s ease;
+                }
+            }
+            
+            .questions_card_answer{
+                display: none;
+
+                padding: 20px;
+                border: 2px solid $gray;
+                min-width: fit-content;
+
+                p{
+                    @include text (16px, 400, 19.5px, $text);
+                }
+            }
+        }
+    }
+}

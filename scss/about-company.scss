@@ -1,0 +1,198 @@
+$blue:#2933AB;
+$white:white;
+$gray:#E6E7EF;
+$text:#000000;
+
+@mixin text ($fs, $fw, $lh, $color){
+    font-family: Montserrat;
+    font-size: $fs;
+    font-weight: $fw;
+    line-height: $lh;
+    color: $color;
+}
+
+@import "./blocks/reset";
+
+@import "./blocks/header";
+@import "./blocks/footer";
+
+header{
+    .container{
+        .header-menu{
+            li:nth-of-type(2){
+                a{
+                    color: $blue;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+
+.container{
+    width: (1440px - 80px) * 100% / 1440px;
+}
+
+.heading{
+    display: flex;
+    justify-content: center;
+    padding: 127px 0 100px;
+
+    h1{
+        @include text (40px, bold, 48.76px, $text);
+    }
+}
+
+.about-company{
+    display: flex;
+    justify-content: center;
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        gap: 125px;
+
+        [class^="about-company_"]{
+            display: flex;
+            align-items: center;
+            gap: 35px;
+
+            [class$="_content"]{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 23px;
+                // text-align: start;
+
+                h2{
+                    @include text (40px, bold, 48.76px, $text);
+                    // text-align: start;
+                }
+
+                [class$="_content_text"]{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 16px;
+
+                    p{
+                        @include text (16px, 400, 19.5px, $text);
+                    }
+                }
+            }
+
+            img{
+                width: 670px * 100% / 1440px;
+                // width: 50%;
+                height: fit-content;
+            }
+        }
+    }
+}
+
+.review{
+    display: flex;
+    justify-content: center;
+    margin: 140px 0;
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 60px;
+
+        h2{
+            @include text (40px, bold, 48.76px, $text);
+        }
+
+        .review_cards{
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+
+            .review_cards_card{
+                padding: 60px 35px;
+                background-color: $blue;
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+                max-width: 370px;
+
+                .review_cards_card_heading{
+                    display: flex;
+                    gap: 20px;
+
+                    .review_cards_card_heading_photo{
+                        min-width: 105px;
+                        min-height: 105px;
+                        border: none;
+                        border-radius: 50px;
+                        background-image: url("../img/user/Alex.png");
+                        background-size: cover;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                    }
+
+                    .review_cards_card_heading_info{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+
+                        h3{
+                            @include text (20px, bold, 24.38px, $white);
+                        }
+
+                        span:first-of-type{
+                            @include text (16px, 400, 19.5px, $white);
+                        }
+
+                        span:last-of-type{
+                            @include text (16px, 400, 19.5px, rgba(255, 255, 255, 0.48));
+                        }
+                    }
+                }
+
+                p{
+                    @include text (16px, 400, 19.5px, $white);
+                }
+            }
+        }
+    }
+}
+
+.contacts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 55px;
+    margin-bottom: 140px;
+    // width: 100%;
+
+    h2{
+        @include text (40px, bold, 48.76px, $text);
+    }
+
+    .contacts_info{
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+
+        [class^="contacts_info_"]{
+            display: flex;
+            gap: 20px;
+            align-items: center;
+
+            .contacts_info_phone_two{
+                display: flex;
+                flex-direction: column;
+                // gap: 12px;
+                justify-content: space-evenly;
+            }
+
+            span{
+                @include text (18px, 400, 21.94px, $text);
+            }
+        }
+    }
+}

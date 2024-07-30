@@ -1,0 +1,198 @@
+$blue:#2933AB;
+$white:white;
+$gray:#E6E7EF;
+$text:#000000;
+
+@mixin text ($fs, $fw, $lh, $color){
+    font-family: Montserrat;
+    font-size: $fs;
+    font-weight: $fw;
+    line-height: $lh;
+    color: $color;
+}
+
+@import "./blocks/reset";
+
+@import "./blocks/header";
+@import "./blocks/footer";
+
+header{
+    .container{
+        .header-menu{
+            li:nth-of-type(4){
+                a{
+                    color: $blue;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+
+.container{
+    width: (1440px - 80px) * 100% / 1440px;
+}
+
+.heading{
+    display: flex;
+    justify-content: center;
+    padding: 127px 0 100px;
+
+    h1{
+        @include text (40px, bold, 48.76px, $text);
+    }
+}
+
+.location{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 140px;
+    width: 100%;
+
+    .container{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-evenly;
+
+        .location_map{
+            position: relative;
+            overflow: hidden;
+            // width: 555px * 100% / 1440px;
+            width: 555px !important;
+            width: fit-content;
+
+            iframe{
+                width: 100%;
+                height: 100%;
+                position: relative;
+            }
+        }
+
+        .location_info{
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+
+            h3{
+                @include text (20px, bold, 24.38px, $text);
+            }
+
+            span{
+                @include text (18px, 400, 21.94px, $text);
+            }
+
+            .location_info_office, 
+            .location_info_stock{
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                .location_info_office_adresses, 
+                .location_info_stock_adresses{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 12px;
+                }
+            }
+
+            .location_info_email,
+            .location_info_phone{
+                display: flex;
+                gap: 20px;
+                align-items: center;
+    
+                .location_info_phone_two{
+                    display: flex;
+                    flex-direction: column;
+                    height: fit-content;
+                    gap: 12px;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+}
+
+.form{
+    padding: 70px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    background-color: $gray;
+
+    h3{
+        @include text (24px, bold, 29.26px, $text);
+        text-align: center;
+        width: 540px * 100% / 1440px;
+    }
+
+    form{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        width: 560px * 100% / 1440px;
+
+        .form_for-text{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            [class^="form_for-text_"]{
+                display: flex;
+                flex-direction: column;
+                gap: 6px;
+                width: 100%;
+
+                label{
+                    @include text (18px, 400, 21.94px, $text);
+                }
+
+                input, textarea{
+                    padding: 15px 30px;
+                    border: 2px solid $blue;
+                    @include text (16px, 400, 19.5px, $text);
+                    background-color: $gray;
+
+                    &::placeholder{
+                        @include text (16px, 400, 19.5px, rgba(141, 141, 141, 0.48));
+                    }
+                }
+            }
+        }
+
+        .form_for-submit{
+            width: 100%;
+            display: flex;
+            gap: 25px;
+
+            input[type="submit"],
+            input[type="button"]{
+                padding: 15px;
+                width: 100%;
+                @include text (20px, 400, 24.38px, $text);
+            }
+
+            input[type="submit"]{
+                border: 2px solid $blue;
+                background-color: $gray;
+
+                &:hover{
+                    background-color: $blue;
+                    color: $white;
+                }
+            }
+
+            input[type="button"]{
+                border: 2px solid $blue;
+                background-color: $blue;
+                color: $white;
+
+                &:hover{
+                    background-color: $gray;
+                    color: $text;
+                }
+            }
+        }
+    }
+}
