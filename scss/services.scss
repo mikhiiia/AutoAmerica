@@ -43,10 +43,10 @@ header{
     }
 }
 
-.content-news{
+.services{
     display: flex;
     justify-content: center;
-    margin-bottom: 110px;
+    margin-bottom: 140px;
 
     .container{
         display: flex;
@@ -54,47 +54,121 @@ header{
         flex-wrap: wrap;
         justify-content: center;
 
-        .content-news_card{
-            width: 440px;
+        .services_card{
+            width: 670px * 100% / (1440px - 80px);
+            height: 370px;
             display: flex;
-            flex-direction: column;
-            align-items: center;
+            flex-direction: row-reverse;
+            // align-items: center;
 
-            img{
-                width: 100%;
-            }
-
-            .content-news_card_content{
-                padding: 20px;
+            .services_card_content{
+                padding: 20px 20px 20px 40px;
                 display: flex;
                 flex-direction: column;
-                gap: 15px;
+                justify-content: space-between;
+                border: 2px solid $blue;
+                border-left: none;
 
-                h4{
-                    @include text (16px, bold, 19.5px, $text);
+                .services_card_content_text{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 15px;
+
+                    h4{
+                        @include text (20px, bold, 24.38px, $text);
+                    }
+
+                    .services_card_content_text_p{
+                        @include text (12px, 400, 14.63px, $text);
+
+                        ul{
+                            list-style: inside;
+                            @include text (12px, 400, 14.63px, $text);
+
+                            li{
+                                @include text (12px, 400, 14.63px, $text);
+                            }
+                        }
+                    }
                 }
 
-                p{
-                    @include text (12px, 400, 14.63px, $text);
-                }
+                span{
+                    @include text (24px, bold, 29.26px, $text);
 
-                .content-news_card_content_date-and-btn{
+                    span{
+                        @include text (15px, bold, 18.29px, $text);
+                    }
+                }
+            }
+
+            img{
+                height: 100%;
+                width: 230px * 100% / 670px;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+.calc{
+    padding: 90px 0px;
+    display: flex;
+    justify-content: center;
+    background-color: $gray;
+
+    .calc_content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+        width: 670px * 100% / 1440px;
+
+        h2{
+            @include text (40px, bold, 48.76px, $text);
+        }
+
+        .calc_content_info{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 35px;
+
+            .calc_content_info_services{
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                .calc_content_info_services_card{
+                    padding: 15px 60px;
+                    border: 2px solid $blue;
                     display: flex;
                     justify-content: space-between;
 
-                    .content-news_card_content_date-and-btn_date{
-                        padding: 6px 41px;
-                        border: 2px solid $gray;
-                        @include text (16px, 400, 19.5px, $text);
+                    span:first-of-type{
+                        @include text (20px, 400, 24.38px, $text);
                     }
 
-                    input[type="button"]{
-                        padding: 10px 35px;
-                        background-color: $blue;
-                        @include text (16px, 400, 19.5px, $white);
-                        width: fit-content;
-                        border: none;
+                    span:last-of-type{
+                        @include text (24px, bold, 29.26px, $text);
                     }
+
+                    &:hover
+                    // &:active
+                    {
+                        background-color: $blue;
+
+                        span{
+                            color: $white;
+                        }
+                    }
+                }    
+            }
+
+            span{
+                @include text (48px, 400, 58.51px, $text);
+
+                span{
+                    @include text (48px, bold, 58.51px, $text);
                 }
             }
         }

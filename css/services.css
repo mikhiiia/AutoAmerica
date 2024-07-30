@@ -174,68 +174,154 @@ header .container .header-menu li:nth-of-type(3) a {
   color: #000000;
 }
 
-.content-news {
+.services {
   display: flex;
   justify-content: center;
-  margin-bottom: 110px;
+  margin-bottom: 140px;
 }
-.content-news .container {
+.services .container {
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
   justify-content: center;
 }
-.content-news .container .content-news_card {
-  width: 440px;
+.services .container .services_card {
+  width: 49.2647058824%;
+  height: 370px;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.services .container .services_card .services_card_content {
+  padding: 20px 20px 20px 40px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: space-between;
+  border: 2px solid #2933AB;
+  border-left: none;
 }
-.content-news .container .content-news_card img {
-  width: 100%;
-}
-.content-news .container .content-news_card .content-news_card_content {
-  padding: 20px;
+.services .container .services_card .services_card_content .services_card_content_text {
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
-.content-news .container .content-news_card .content-news_card_content h4 {
+.services .container .services_card .services_card_content .services_card_content_text h4 {
   font-family: Montserrat;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: bold;
-  line-height: 19.5px;
+  line-height: 24.38px;
   color: #000000;
 }
-.content-news .container .content-news_card .content-news_card_content p {
+.services .container .services_card .services_card_content .services_card_content_text .services_card_content_text_p {
   font-family: Montserrat;
   font-size: 12px;
   font-weight: 400;
   line-height: 14.63px;
   color: #000000;
 }
-.content-news .container .content-news_card .content-news_card_content .content-news_card_content_date-and-btn {
+.services .container .services_card .services_card_content .services_card_content_text .services_card_content_text_p ul {
+  list-style: inside;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14.63px;
+  color: #000000;
+}
+.services .container .services_card .services_card_content .services_card_content_text .services_card_content_text_p ul li {
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14.63px;
+  color: #000000;
+}
+.services .container .services_card .services_card_content span {
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 29.26px;
+  color: #000000;
+}
+.services .container .services_card .services_card_content span span {
+  font-family: Montserrat;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 18.29px;
+  color: #000000;
+}
+.services .container .services_card img {
+  height: 100%;
+  width: 34.328358209%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.calc {
+  padding: 90px 0px;
+  display: flex;
+  justify-content: center;
+  background-color: #E6E7EF;
+}
+.calc .calc_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  width: 46.5277777778%;
+}
+.calc .calc_content h2 {
+  font-family: Montserrat;
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 48.76px;
+  color: #000000;
+}
+.calc .calc_content .calc_content_info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+.calc .calc_content .calc_content_info .calc_content_info_services {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.calc .calc_content .calc_content_info .calc_content_info_services .calc_content_info_services_card {
+  padding: 15px 60px;
+  border: 2px solid #2933AB;
   display: flex;
   justify-content: space-between;
 }
-.content-news .container .content-news_card .content-news_card_content .content-news_card_content_date-and-btn .content-news_card_content_date-and-btn_date {
-  padding: 6px 41px;
-  border: 2px solid #E6E7EF;
+.calc .calc_content .calc_content_info .calc_content_info_services .calc_content_info_services_card span:first-of-type {
   font-family: Montserrat;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 400;
-  line-height: 19.5px;
+  line-height: 24.38px;
   color: #000000;
 }
-.content-news .container .content-news_card .content-news_card_content .content-news_card_content_date-and-btn input[type=button] {
-  padding: 10px 35px;
-  background-color: #2933AB;
+.calc .calc_content .calc_content_info .calc_content_info_services .calc_content_info_services_card span:last-of-type {
   font-family: Montserrat;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 19.5px;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 29.26px;
+  color: #000000;
+}
+.calc .calc_content .calc_content_info .calc_content_info_services .calc_content_info_services_card:hover {
+  background-color: #2933AB;
+}
+.calc .calc_content .calc_content_info .calc_content_info_services .calc_content_info_services_card:hover span {
   color: white;
-  width: -moz-fit-content;
-  width: fit-content;
-  border: none;
+}
+.calc .calc_content .calc_content_info span {
+  font-family: Montserrat;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 58.51px;
+  color: #000000;
+}
+.calc .calc_content .calc_content_info span span {
+  font-family: Montserrat;
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 58.51px;
+  color: #000000;
 }/*# sourceMappingURL=services.css.map */
