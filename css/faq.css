@@ -39,7 +39,7 @@ blockquote, q {
 
 blockquote:before, blockquote:after,
 q:before, q:after {
-  content: '';
+  content: "";
   content: none;
 }
 
@@ -54,39 +54,23 @@ a {
 }
 
 header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   padding: 36px 0;
 }
-
 header .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
-
 header .container .header-logo img {
   width: 155px;
   height: 25px;
 }
-
 header .container .header-menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 40px;
 }
-
 header .container .header-menu li {
   font-family: Montserrat;
   font-size: 20px;
@@ -94,17 +78,11 @@ header .container .header-menu li {
   line-height: 24.38px;
   color: #000000;
 }
-
 header .container .header-info {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 13px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 header .container .header-info input {
   padding: 8px 18px;
   background-color: #2933AB;
@@ -115,7 +93,6 @@ header .container .header-info input {
   line-height: 19.5px;
   color: white;
 }
-
 header .container .header-info input:hover {
   border: 2px solid #2933AB;
   background: none;
@@ -125,35 +102,20 @@ header .container .header-info input:hover {
 footer {
   padding: 150px 135px;
   background-color: #2933AB;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
-
 footer .footer-info {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 8px;
 }
-
 footer .footer-info img {
   width: 307px;
-  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
 }
-
 footer .footer-info p {
   font-family: Montserrat;
   font-size: 16px;
@@ -161,27 +123,15 @@ footer .footer-info p {
   line-height: 19.5px;
   color: white;
 }
-
 footer .footer-menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 25px;
 }
-
 footer .footer-menu ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
-
 footer .footer-menu ul li {
   font-family: Montserrat;
   font-size: 16px;
@@ -189,14 +139,10 @@ footer .footer-menu ul li {
   line-height: 19.5px;
   color: white;
 }
-
 footer .footer-menu .footer-menu_else-info {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 25px;
 }
-
 footer .footer-menu .footer-menu_else-info a {
   font-family: Montserrat;
   font-size: 16px;
@@ -212,19 +158,14 @@ header .container .header-menu li:nth-of-type(6) a {
 }
 
 .container {
-  width: 94.44444%;
+  width: 94.4444444444%;
 }
 
 .heading {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   padding: 127px 0 100px;
 }
-
 .heading h1 {
   font-family: Montserrat;
   font-size: 40px;
@@ -234,56 +175,33 @@ header .container .header-menu li:nth-of-type(6) a {
 }
 
 .questions {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   margin-bottom: 200px;
 }
-
 .questions .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   row-gap: 40px;
-  -webkit-column-gap: 20px;
-          column-gap: 20px;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-
 .questions .container .questions_card {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 10px;
   width: 670px;
 }
-
 .questions .container .questions_card .questions_card_question {
   padding: 20px;
   background-color: #2933AB;
-  min-width: -webkit-fit-content;
   min-width: -moz-fit-content;
   min-width: fit-content;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 10px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 .questions .container .questions_card .questions_card_question p {
   font-family: Montserrat;
   font-size: 20px;
@@ -292,37 +210,24 @@ header .container .header-menu li:nth-of-type(6) a {
   color: white;
   width: 585px;
 }
-
 .questions .container .questions_card .questions_card_question .rotate {
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
-  -webkit-transition: -webkit-transform 0.5s ease;
-  transition: -webkit-transform 0.5s ease;
+  transform: rotate(180deg);
   transition: transform 0.5s ease;
-  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
 }
-
 .questions .container .questions_card .questions_card_question img {
-  -webkit-transition: -webkit-transform 0.5s ease;
-  transition: -webkit-transform 0.5s ease;
   transition: transform 0.5s ease;
-  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
 }
-
 .questions .container .questions_card .questions_card_answer {
   display: none;
   padding: 20px;
   border: 2px solid #E6E7EF;
-  min-width: -webkit-fit-content;
   min-width: -moz-fit-content;
   min-width: fit-content;
 }
-
 .questions .container .questions_card .questions_card_answer p {
   font-family: Montserrat;
   font-size: 16px;
   font-weight: 400;
   line-height: 19.5px;
   color: #000000;
-}
-/*# sourceMappingURL=faq.css.map */
+}/*# sourceMappingURL=faq.css.map */
