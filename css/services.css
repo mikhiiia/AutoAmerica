@@ -39,7 +39,7 @@ blockquote, q {
 
 blockquote:before, blockquote:after,
 q:before, q:after {
-  content: "";
+  content: '';
   content: none;
 }
 
@@ -54,23 +54,39 @@ a {
 }
 
 header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 36px 0;
 }
+
 header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 header .container .header-logo img {
   width: 155px;
   height: 25px;
 }
+
 header .container .header-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 40px;
 }
+
 header .container .header-menu li {
   font-family: Montserrat;
   font-size: 20px;
@@ -78,11 +94,17 @@ header .container .header-menu li {
   line-height: 24.38px;
   color: #000000;
 }
+
 header .container .header-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 13px;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 header .container .header-info input {
   padding: 8px 18px;
   background-color: #2933AB;
@@ -93,33 +115,54 @@ header .container .header-info input {
   line-height: 19.5px;
   color: white;
 }
+
 header .container .header-info input:hover {
   border: 2px solid #2933AB;
   background: none;
   padding: 7px 17px;
 }
+
 header .container .header-info a {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 footer {
   padding: 150px 135px;
   background-color: #2933AB;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 footer .footer-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   gap: 8px;
 }
+
 footer .footer-info img {
   width: 307px;
+  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
 }
+
 footer .footer-info p {
   font-family: Montserrat;
   font-size: 16px;
@@ -127,15 +170,27 @@ footer .footer-info p {
   line-height: 19.5px;
   color: white;
 }
+
 footer .footer-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   gap: 25px;
 }
+
 footer .footer-menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
+
 footer .footer-menu ul li {
   font-family: Montserrat;
   font-size: 16px;
@@ -143,10 +198,14 @@ footer .footer-menu ul li {
   line-height: 19.5px;
   color: white;
 }
+
 footer .footer-menu .footer-menu_else-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 25px;
 }
+
 footer .footer-menu .footer-menu_else-info a {
   font-family: Montserrat;
   font-size: 16px;
@@ -162,14 +221,19 @@ header .container .header-menu li:nth-of-type(3) a {
 }
 
 .container {
-  width: 94.4444444444%;
+  width: 94.44444%;
 }
 
 .heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 127px 0 100px;
 }
+
 .heading h1 {
   font-family: Montserrat;
   font-size: 40px;
@@ -179,35 +243,66 @@ header .container .header-menu li:nth-of-type(3) a {
 }
 
 .services {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-bottom: 140px;
 }
+
 .services .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 20px;
-  flex-wrap: wrap;
-  justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
+
 .services .container .services_card {
-  width: 49.2647058824%;
+  width: 49.26471%;
   height: 370px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row-reverse;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
 }
+
 .services .container .services_card .services_card_content {
   padding: 20px 20px 20px 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   border: 2px solid #2933AB;
   border-left: none;
 }
+
 .services .container .services_card .services_card_content .services_card_content_text {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   gap: 15px;
 }
+
 .services .container .services_card .services_card_content .services_card_content_text h4 {
   font-family: Montserrat;
   font-size: 20px;
@@ -215,6 +310,7 @@ header .container .header-menu li:nth-of-type(3) a {
   line-height: 24.38px;
   color: #000000;
 }
+
 .services .container .services_card .services_card_content .services_card_content_text .services_card_content_text_p {
   font-family: Montserrat;
   font-size: 12px;
@@ -222,6 +318,7 @@ header .container .header-menu li:nth-of-type(3) a {
   line-height: 14.63px;
   color: #000000;
 }
+
 .services .container .services_card .services_card_content .services_card_content_text .services_card_content_text_p ul {
   list-style: inside;
   font-family: Montserrat;
@@ -230,6 +327,7 @@ header .container .header-menu li:nth-of-type(3) a {
   line-height: 14.63px;
   color: #000000;
 }
+
 .services .container .services_card .services_card_content .services_card_content_text .services_card_content_text_p ul li {
   font-family: Montserrat;
   font-size: 12px;
@@ -237,6 +335,7 @@ header .container .header-menu li:nth-of-type(3) a {
   line-height: 14.63px;
   color: #000000;
 }
+
 .services .container .services_card .services_card_content span {
   font-family: Montserrat;
   font-size: 24px;
@@ -244,6 +343,7 @@ header .container .header-menu li:nth-of-type(3) a {
   line-height: 29.26px;
   color: #000000;
 }
+
 .services .container .services_card .services_card_content span span {
   font-family: Montserrat;
   font-size: 15px;
@@ -251,26 +351,40 @@ header .container .header-menu li:nth-of-type(3) a {
   line-height: 18.29px;
   color: #000000;
 }
+
 .services .container .services_card img {
   height: 100%;
-  width: 34.328358209%;
+  width: 34.32836%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
 .calc {
   padding: 90px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background-color: #E6E7EF;
 }
+
 .calc .calc_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 50px;
-  width: 46.5277777778%;
+  width: 46.52778%;
 }
+
 .calc .calc_content h2 {
   font-family: Montserrat;
   font-size: 40px;
@@ -278,23 +392,41 @@ header .container .header-menu li:nth-of-type(3) a {
   line-height: 48.76px;
   color: #000000;
 }
+
 .calc .calc_content .calc_content_info {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   gap: 35px;
 }
+
 .calc .calc_content .calc_content_info .calc_content_info_services {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   gap: 20px;
 }
+
 .calc .calc_content .calc_content_info .calc_content_info_services .calc_content_info_services_card {
   padding: 15px 60px;
   border: 2px solid #2933AB;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
+
 .calc .calc_content .calc_content_info .calc_content_info_services .calc_content_info_services_card span:first-of-type {
   font-family: Montserrat;
   font-size: 20px;
@@ -302,6 +434,7 @@ header .container .header-menu li:nth-of-type(3) a {
   line-height: 24.38px;
   color: #000000;
 }
+
 .calc .calc_content .calc_content_info .calc_content_info_services .calc_content_info_services_card span:last-of-type {
   font-family: Montserrat;
   font-size: 24px;
@@ -309,12 +442,15 @@ header .container .header-menu li:nth-of-type(3) a {
   line-height: 29.26px;
   color: #000000;
 }
+
 .calc .calc_content .calc_content_info .calc_content_info_services .calc_content_info_services_card:hover {
   background-color: #2933AB;
 }
+
 .calc .calc_content .calc_content_info .calc_content_info_services .calc_content_info_services_card:hover span {
   color: white;
 }
+
 .calc .calc_content .calc_content_info span {
   font-family: Montserrat;
   font-size: 48px;
@@ -322,10 +458,12 @@ header .container .header-menu li:nth-of-type(3) a {
   line-height: 58.51px;
   color: #000000;
 }
+
 .calc .calc_content .calc_content_info span span {
   font-family: Montserrat;
   font-size: 48px;
   font-weight: bold;
   line-height: 58.51px;
   color: #000000;
-}/*# sourceMappingURL=services.css.map */
+}
+/*# sourceMappingURL=services.css.map */
