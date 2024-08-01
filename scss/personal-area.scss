@@ -31,13 +31,163 @@ $text:#000000;
 }
 
 .account{
-    width: 1130px * 100% / 1440px;
     display: flex;
     justify-content: center;
-    gap: 60px;
+    margin-bottom: 150px;
 
-    .account_buttons{
-        width: 400px * 100% / 1130px;
+    .account_section{
+        width: 1130px * 100% / 1440px;
+        display: flex;
+        justify-content: center;
+        gap: 60px;
+
+        .account_section_buttons{
+            // margin-top: 13px;
+            width: 400px * 100% / 1130px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            input[type="button"]{
+                padding: 15px 30px;
+                border: 2px solid $gray;
+                @include text (20px, 400, 24.38px, $text);
+                background: none;
+
+                &:hover{
+                    border: 2px solid $blue;
+                }
+            }
+        }    
+
+        .account_section_info{
+            width: 680px * 100% / 1130px;            
+            // личная информация
+            .account_section_info_private-inf{
+                display: flex;
+                gap: 20px;
+
+                img{
+                    // margin-top: 13px;
+                    height: 260px;
+                    width: 260px;
+                }
+
+                .account_section_info_private-inf_all{
+                    margin-top: -13px;
+                    display: flex;
+                    flex-direction: column;
+                    
+                    span, a{
+                        @include text (20px, bold, 60px, $text);
+
+                        span{
+                            color: $blue;
+                        }
+                    }
+
+                    a{
+                        text-decoration: underline;
+                        color: $blue;
+                    }
+                }
+            }
+
+            // Редактировать информацию
+            .account_section_info_change-inf{
+
+
+                form{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 40px;
+                    width: 100%;
+            
+                    .form_for-text{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 20px;
+            
+                        [class^="form_for-text_"]{
+                            display: flex;
+                            flex-direction: column;
+                            gap: 6px;
+                            width: 100%;
+            
+                            label{
+                                @include text (18px, 400, 21.94px, $text);
+                            }
+            
+                            input{
+                                padding: 15px 30px;
+                                border: 2px solid $blue;
+                                @include text (16px, 400, 19.5px, $text);
+                                background: none;
+            
+                                &::placeholder{
+                                    @include text (16px, 400, 19.5px, rgba(141, 141, 141, 0.48));
+                                }
+                            }
+                        }
+                    }
+            
+                    .form_for-submit{
+                        width: 100%;
+                        display: flex;
+                        gap: 25px;
+            
+                        input[type="submit"],
+                        input[type="button"]{
+                            padding: 15px;
+                            width: 100%;
+                            @include text (20px, 400, 24.38px, $text);
+                        }
+            
+                        input[type="submit"]{
+                            border: 2px solid $blue;
+                            background: none;
+            
+                            &:hover{
+                                background-color: $blue;
+                                color: $white;
+                            }
+                        }
+            
+                        input[type="button"]{
+                            border: 2px solid $blue;
+                            background-color: $blue;
+                            color: $white;
+            
+                            &:hover{
+                                background-color: $gray;
+                                color: $text;
+                            }
+                        }
+                    }
+                }
+            }
+
+            // Статус текущих заказов
+            .account_section_info_private-inf{
+                display: flex;
+                flex-direction: column;
+
+                span{
+                    @include text (20px, 400, 24.38px, $text);
+
+                    &:nth-child(3){
+                        color: $blue;
+                        font-weight: 600;
+                    }
+                }
+            }
+
+            // Избранные автомобили
+            .account_section_info_favourites{
+                
+            }
+        }
     }
+
 }
 

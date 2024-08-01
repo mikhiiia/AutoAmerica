@@ -34,88 +34,90 @@
     </div>
 
     <section class="account">
-        <div class="account_buttons">
-            <input type="button" value="Личная информация">
-            <input type="button" value="Редактировать информацию">
-            <input type="button" value="Статус текущих заказов">
-            <input type="button" value="Избранные автомобили">
-            <input type="button" value="История покупок">
-        </div>
-        <div class="account_info">
-            <!-- Личная информация -->
-            <div class="account_info_private-inf">
-                <img src="./img/user/Alex.png" alt="ALex">
-                <div class="account_info_private-inf_all">
-                    <span><span>Имя:</span> Привольный Алексей Александрович</span>
-                    <span><span>Номер телефона:</span> (812) 555-12-34</span>
-                    <span><span>Email:</span>span> privolnymail@mail.com</span>
-                    <span>Имя: <span>Привольный Алексей</span></span>
-                    <a href="#">Редактировать личную информацию</a>
-                </div>
+        <div class="account_section">
+            <div class="account_section_buttons">
+                <input type="button" value="Личная информация">
+                <input type="button" value="Редактировать информацию">
+                <input type="button" value="Статус текущих заказов">
+                <input type="button" value="Избранные автомобили">
+                <input type="button" value="История покупок">
             </div>
-            <!-- Редактировать информацию -->
-            <!-- <div class="account_info_change-inf">
-                <form action="" method="post">
-                    <div class="form_for-text">
-                        <div class="form_for-text_name">
-                            <label for="">Ваше имя*</label>
-                            <input type="text" placeholder="Алексей Алексеевич">
-                        </div>
-                        <div class="form_for-text_phone-num">
-                            <label for="">Номер телефона*</label>
-                            <input type="text" placeholder="00 000-00-00">
-                        </div>
-                        <div class="form_for-text_question">
-                            <label for="question">Оставьте ваш вопрос*</label>
-                            <textarea name="question" id="" cols="30" rows="10"></textarea>
-                        </div>
+            <div class="account_section_info">
+                <!-- Личная информация -->
+                <!-- <div class="account_section_info_private-inf">
+                    <img src="./img/user/Alex.png" alt="ALex">
+                    <div class="account_section_info_private-inf_all">
+                        <span><span>Имя:</span> Привольный Алексей Александрович</span>
+                        <span><span>Номер телефона:</span> (812) 555-12-34</span>
+                        <span><span>Email:</span> privolnymail@mail.com</span>
+                        <a href="#">Редактировать личную информацию</a>
                     </div>
-                    <div class="form_for-submit">
-                        <input type="submit" value="Отправить">
-                        <input type="button" value="Очистить">
-                    </div>
-                </form>
-            </div> -->
-            <!-- Статус текущих заказов -->
-            <!-- <div class="account_info_private-inf">
-                Находится в обработке — Оформлен и передан на склад — 
-                <a href="#">Сбор документации для отправки</a> 
-            </div> -->
-            <!-- Избранные автомобили -->
-            <!-- <div class="account_info_favourites">
-                <div class="account_info_favourites_card">
-                    <img src="./img/cars/volkswagen-tiguan.png" alt="volkswagen-tiguan">
-                    <div class="account_info_favourites_card_inf">
-                        <div class="account_info_favourites_card_inf_name">
+                </div> -->
+                <!-- Редактировать информацию -->
+                <!-- <div class="account_section_info_change-inf">
+                    <form action="" method="post">
+                        <div class="form_for-text">
+                            <div class="form_for-text_name">
+                                <label for="">Ваше имя*</label>
+                                <input type="text" placeholder="Алексей Алексеевич">
+                            </div>
+                            <div class="form_for-text_phone-num">
+                                <label for="">Номер телефона*</label>
+                                <input type="text" placeholder="00 000-00-00">
+                            </div>
+                            <div class="form_for-text_email">
+                                <label for="email">Электронная почта*</label>
+                                <input type="text" placeholder="yourmail@mail.com">
+                            </div>
+                        </div>
+                        <div class="form_for-submit">
+                            <input type="submit" value="Сохранить">
+                            <input type="button" value="Очистить">
+                        </div>
+                    </form>
+                </div> -->
+                <!-- Статус текущих заказов -->
+                <!-- <div class="account_section_info_private-inf">
+                    <span>Находится в обработке</span>
+                    <span>Оформлен и передан на склад</span> 
+                    <span>Сбор документации для отправки</span>
+                </div> -->
+                <!-- Избранные автомобили -->
+                <div class="account_section_info_favourites">
+                    <div class="account_section_info_favourites_card">
+                        <img src="./img/cars/volkswagen-tiguan.png" alt="volkswagen-tiguan">
+                        <div class="account_section_info_favourites_card_inf">
+                            <div class="account_section_info_favourites_card_inf_name">
+                                <h4>Volkswagen Tiguan Allspace 2.0 AT, 2019 г</h4>
+                                <img src="./img/icons/Heart-blue.svg" alt="favourite">
+                            </div>
+                            <div class="account_section_info_favourites_card_inf_discription">
+                                <p>Внедорожник 5 дв., подключаемый полный привод, белый. Автомобиль полностью обслужен и не требует вложений. </p>
+                            </div>
+                            <div class="account_section_info_favourites_card_inf_price">
+                                <span>350 000 ₽</span>
+                                <input type="button" value="Подробнее">
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+                <!-- История покупок -->
+                <!-- <div class="account_section_info_history">
+                    <div class="account_section_info_history_card">
+                        <img src="./img/cars/volkswagen-tiguan.png" alt="volkswagen-tiguan">
+                        <div class="account_section_info_history_card_inf">
                             <h4>Volkswagen Tiguan Allspace 2.0 AT, 2019 г</h4>
-                            <img src="./img/icons/Heart-blue.svg" alt="favourite">
+                            <div class="account_section_info_history_card_inf_discription">
+                                <p>Внедорожник 5 дв., подключаемый полный привод, белый. Автомобиль полностью обслужен и не требует вложений. </p>
+                            </div>
+                            <div class="account_section_info_history_card_inf_price">
+                                <span>350 000 ₽</span>
+                                <span><span>Дата приобретения:</span>  20.09.2023</span>
+                            </div>
                         </div>
-                        <div class="account_info_favourites_card_inf_discription">
-                            <p>Внедорожник 5 дв., подключаемый полный привод, белый. Автомобиль полностью обслужен и не требует вложений. </p>
-                        </div>
-                        <div class="account_info_favourites_card_inf_price">
-                            <span>350 000 ₽</span>
-                            <input type="button" value="Подробнее">
-                        </div>
-                    </div>
-                </div>  
-            </div> -->
-            <!-- История покупок -->
-            <!-- <div class="account_info_history">
-                <div class="account_info_history_card">
-                    <img src="./img/cars/volkswagen-tiguan.png" alt="volkswagen-tiguan">
-                    <div class="account_info_history_card_inf">
-                        <h4>Volkswagen Tiguan Allspace 2.0 AT, 2019 г</h4>
-                        <div class="account_info_history_card_inf_discription">
-                            <p>Внедорожник 5 дв., подключаемый полный привод, белый. Автомобиль полностью обслужен и не требует вложений. </p>
-                        </div>
-                        <div class="account_info_history_card_inf_price">
-                            <span>350 000 ₽</span>
-                            <span><span>Дата приобретения:</span>  20.09.2023</span>
-                        </div>
-                    </div>
-                </div>  
-            </div> -->
+                    </div>  
+                </div> -->
+            </div>    
         </div>
     </section>
 

@@ -238,6 +238,16 @@ footer .footer-menu .footer-menu_else-info a {
 }
 
 .account {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 150px;
+}
+
+.account .account_section {
   width: 78.47222%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -248,7 +258,223 @@ footer .footer-menu .footer-menu_else-info a {
   gap: 60px;
 }
 
-.account .account_buttons {
+.account .account_section .account_section_buttons {
   width: 35.39823%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+
+.account .account_section .account_section_buttons input[type="button"] {
+  padding: 15px 30px;
+  border: 2px solid #E6E7EF;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24.38px;
+  color: #000000;
+  background: none;
+}
+
+.account .account_section .account_section_buttons input[type="button"]:hover {
+  border: 2px solid #2933AB;
+}
+
+.account .account_section .account_section_info {
+  width: 60.17699%;
+}
+
+.account .account_section .account_section_info .account_section_info_private-inf {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+
+.account .account_section .account_section_info .account_section_info_private-inf img {
+  height: 260px;
+  width: 260px;
+}
+
+.account .account_section .account_section_info .account_section_info_private-inf .account_section_info_private-inf_all {
+  margin-top: -13px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.account .account_section .account_section_info .account_section_info_private-inf .account_section_info_private-inf_all span, .account .account_section .account_section_info .account_section_info_private-inf .account_section_info_private-inf_all a {
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 60px;
+  color: #000000;
+}
+
+.account .account_section .account_section_info .account_section_info_private-inf .account_section_info_private-inf_all span span, .account .account_section .account_section_info .account_section_info_private-inf .account_section_info_private-inf_all a span {
+  color: #2933AB;
+}
+
+.account .account_section .account_section_info .account_section_info_private-inf .account_section_info_private-inf_all a {
+  text-decoration: underline;
+  color: #2933AB;
+}
+
+.account .account_section .account_section_info .account_section_info_change-inf form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 40px;
+  width: 100%;
+}
+
+.account .account_section .account_section_info .account_section_info_change-inf form .form_for-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+
+.account .account_section .account_section_info .account_section_info_change-inf form .form_for-text [class^="form_for-text_"] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 6px;
+  width: 100%;
+}
+
+.account .account_section .account_section_info .account_section_info_change-inf form .form_for-text [class^="form_for-text_"] label {
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.94px;
+  color: #000000;
+}
+
+.account .account_section .account_section_info .account_section_info_change-inf form .form_for-text [class^="form_for-text_"] input {
+  padding: 15px 30px;
+  border: 2px solid #2933AB;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.5px;
+  color: #000000;
+  background: none;
+}
+
+.account .account_section .account_section_info .account_section_info_change-inf form .form_for-text [class^="form_for-text_"] input::-webkit-input-placeholder {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.5px;
+  color: rgba(141, 141, 141, 0.48);
+}
+
+.account .account_section .account_section_info .account_section_info_change-inf form .form_for-text [class^="form_for-text_"] input:-ms-input-placeholder {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.5px;
+  color: rgba(141, 141, 141, 0.48);
+}
+
+.account .account_section .account_section_info .account_section_info_change-inf form .form_for-text [class^="form_for-text_"] input::-ms-input-placeholder {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.5px;
+  color: rgba(141, 141, 141, 0.48);
+}
+
+.account .account_section .account_section_info .account_section_info_change-inf form .form_for-text [class^="form_for-text_"] input::placeholder {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.5px;
+  color: rgba(141, 141, 141, 0.48);
+}
+
+.account .account_section .account_section_info .account_section_info_change-inf form .form_for-submit {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 25px;
+}
+
+.account .account_section .account_section_info .account_section_info_change-inf form .form_for-submit input[type="submit"],
+.account .account_section .account_section_info .account_section_info_change-inf form .form_for-submit input[type="button"] {
+  padding: 15px;
+  width: 100%;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24.38px;
+  color: #000000;
+}
+
+.account .account_section .account_section_info .account_section_info_change-inf form .form_for-submit input[type="submit"] {
+  border: 2px solid #2933AB;
+  background: none;
+}
+
+.account .account_section .account_section_info .account_section_info_change-inf form .form_for-submit input[type="submit"]:hover {
+  background-color: #2933AB;
+  color: white;
+}
+
+.account .account_section .account_section_info .account_section_info_change-inf form .form_for-submit input[type="button"] {
+  border: 2px solid #2933AB;
+  background-color: #2933AB;
+  color: white;
+}
+
+.account .account_section .account_section_info .account_section_info_change-inf form .form_for-submit input[type="button"]:hover {
+  background-color: #E6E7EF;
+  color: #000000;
+}
+
+.account .account_section .account_section_info .account_section_info_private-inf {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.account .account_section .account_section_info .account_section_info_private-inf span {
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24.38px;
+  color: #000000;
+}
+
+.account .account_section .account_section_info .account_section_info_private-inf span:nth-child(3) {
+  color: #2933AB;
+  font-weight: 600;
 }
 /*# sourceMappingURL=personal-area.css.map */
